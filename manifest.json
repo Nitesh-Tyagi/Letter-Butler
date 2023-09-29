@@ -16,7 +16,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_icon": "inactive.png",
+    "default_icon": "active.png",
     "default_title": "Letter Butler"
   },
   "permissions": [
@@ -24,6 +24,5 @@
     "storage",
     "webNavigation",
     "scripting"
-    // "https://mail.google.com/"
   ]
 }
