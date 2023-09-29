@@ -1,5 +1,3 @@
-// import fetch from "node-fetch";
-
 let lastURL = "";
 var s = "";
 const labels = [ "Urgent", "Excited", "Payment", "Billing", "Tech", "Legal", "News", "Inform", "Request", "Complain" ]
@@ -68,24 +66,22 @@ async function display(lab,sum) {
   const o = document.getElementsByClassName("hP");
 
   const labEl = document.createElement("div");
-  labEl.style.display = "flex"; // Use flexbox to align the child divs horizontally
-  labEl.style.gap = "10px"; // Add some space between the child divs
+  labEl.style.display = "flex";
+  labEl.style.gap = "10px";
 
   for (let i = 0; i < lab.length; i++) {
     const d = document.createElement("div");
     d.innerText = lab[i].label;
 
-    // Add styles to the child divs
     d.style.padding = "5px";
     d.style.border = "1px solid #ccc";
-    d.style.borderRadius = "5px"; // Add a bit of curved radius border
+    d.style.borderRadius = "5px";
 
     labEl.appendChild(d);
   }
 
   o[0].appendChild(labEl);
 
-  // Add styles to the parent div (labEl)
   labEl.style.fontSize = "16px";
   labEl.style.color = "#696969";
   labEl.style.padding = "10px";
@@ -97,11 +93,11 @@ async function display(lab,sum) {
   const sumEl = document.createElement("div");
   sumEl.innerText = sum;
 
-  sumEl.style.fontSize = "16px";  // Set the text size
-  sumEl.style.color = "grey";    // Set the text color to greyish
-  sumEl.style.padding = "10px";  // Add padding
+  sumEl.style.fontSize = "16px";
+  sumEl.style.color = "grey";
+  sumEl.style.padding = "10px";
   sumEl.style.margin = "5px 0px";
-  sumEl.style.border = "1.5px solid #696969"; // Add a 1px grey border
+  sumEl.style.border = "1.5px solid #696969";
   sumEl.style.borderRadius = "8px";
 
   o[0].appendChild(sumEl);
